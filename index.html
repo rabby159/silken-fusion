@@ -233,8 +233,8 @@
                 <!-- order  -->
                 <div class="lg:mt-28 flex-1 mx-3 md:mx-0">
                     <div class="mb-5 flex">
-                        <input id="coupon-code" type="text" placeholder="Coupon code" class="input input-bordered w-full max-w-xs" />
-                        <button  onclick="discountApply()" id="apply" class="rounded-lg p-3 btn bg-[#E527B2] text-white -ml-16" >APPLY</button>
+                        <input id="coupon-code" onclick="discountApply()" type="text" placeholder="Coupon code" class="input input-bordered w-full max-w-xs" />
+                        <button id="apply-btn" class=" btn rounded-lg p-3  bg-[#E527B2] text-white -ml-16 focus:outline-none" disabled>APPLY</button>
                     </div>
                     <div id="product-name">
                         
@@ -243,7 +243,7 @@
                         <p class="border-t-2 pt-3">Total price: <span id="total-price">00.00</span> TK</p>
                         <p>Discount: <span id="discount">00.00</span> TK</p>
                         <p class="border-b-2 pb-3">Total: <span id="total">00.00</span> TK</p>
-                        <button onclick="updateMakePurchase()"  id="make-purchase" class="bg-[#E527B2] w-full text-white mt-3 rounded-lg p-3 " >Make Purchase</button>
+                        <button id="make-purchase" class="btn bg-[#E527B2] w-full text-white mt-3 rounded-lg p-3 focus:outline-non" disabled>Make Purchase</button>
                     </div>
                 </div>
             </div>

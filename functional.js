@@ -20,3 +20,27 @@ function addProductName(name){
     p.innerHTML = `${count + 1}. ${name} `;
     productName.appendChild(p)
 };
+
+
+function discountApply(){
+
+    const couponCode = document.getElementById('coupon-code');
+    const couponCodeText = couponCode.value;
+
+    const applyBtn = document.getElementById('apply-btn');
+    const totalPrice = getProductValue('total-price');
+    const discount = getProductValue('discount');
+    const total = getProductValue('total');
+       
+    if(couponCodeText === 'SELL200' && totalPrice >= '200'){    
+        applyBtn.disabled = false;      
+        const getDiscountPrice = totalPrice * 0.2;
+        const updateTotalPrice = totalPrice - getDiscountPrice;
+        setTextElementValueById('total', updateTotalPrice.toFixed(2));
+        setTextElementValueById('discount', getDiscountPrice.toFixed(2));
+    }
+    else{
+        applyBtn.disabled = true;
+    }
+    
+};

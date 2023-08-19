@@ -107,25 +107,3 @@ function flexibleSofa(){
     addProductName('Flexible Sofa');
 };
 
-
-function discountApply(){
-
-    const couponCode = document.getElementById('coupon-code');
-    const couponCodeText = couponCode.value;
-
-    const apply = document.getElementById('apply');
-    const totalPrice = getProductValue('total-price');
-    // console.log(totalPrice)
-    const discount = getProductValue('discount');
-    const total = getProductValue('total')
-     
-        if(couponCodeText === 'SELL200' && totalPrice >= '200'){
-            
-            const getDiscountPrice = totalPrice * 0.2;
-            const updateTotalPrice = totalPrice - getDiscountPrice;
-            setTextElementValueById('total', updateTotalPrice.toFixed(2));
-            setTextElementValueById('discount', getDiscountPrice.toFixed(2));
-        }
-    
-}
-
