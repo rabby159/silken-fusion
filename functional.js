@@ -44,3 +44,16 @@ function discountApply(){
     }
     
 };
+
+function makePurchaseButtonActive(){
+    const totalPrice = getProductValue('total-price');
+    const makePurchase = document.getElementById('make-purchase');
+    
+    if(totalPrice > '0'){
+        makePurchase.disabled = false;
+    }
+    else{
+        makePurchase.disabled = true;
+    }
+}
+

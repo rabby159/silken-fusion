@@ -8,6 +8,7 @@ function accessoriesPart1(){
     setTextElementValueById('total-price', totalPrice.toFixed(2))
 
     addProductName('K.Accessories Package 1');
+    makePurchaseButtonActive();
 };
 
 function accessoriesPart2(){
@@ -21,6 +22,7 @@ function accessoriesPart2(){
 
     
     addProductName('K.Accessories Package 2');
+    makePurchaseButtonActive();
 };
 
 function homeCooker(){
@@ -34,6 +36,8 @@ function homeCooker(){
 
 
     addProductName('Home Cooker');
+
+    makePurchaseButtonActive();
 };
 
 function sportsBackCap(){
@@ -46,6 +50,8 @@ function sportsBackCap(){
     setTextElementValueById('total-price', totalPrice.toFixed(2))
 
     addProductName('Sports Back Cap');
+
+    makePurchaseButtonActive();
 };
 
 function fullJerseySets(){
@@ -58,7 +64,9 @@ function fullJerseySets(){
     setTextElementValueById('total-price', totalPrice.toFixed(2))
 
     addProductName('Full Jersey Sets');
+    makePurchaseButtonActive();
 };
+
 function sportsCates(){
 
     const sportsCatesPrice = getProductValue('sports-cates');
@@ -69,6 +77,7 @@ function sportsCates(){
     setTextElementValueById('total-price', totalPrice.toFixed(2))
 
     addProductName('Sports cates');
+    makePurchaseButtonActive();
 };
 
 function singleRelaxChair(){
@@ -81,6 +90,7 @@ function singleRelaxChair(){
     setTextElementValueById('total-price', totalPrice.toFixed(2))
 
     addProductName('Single Relax Chair');
+    makePurchaseButtonActive();
 };
 
 function childrenPlay(){
@@ -93,6 +103,7 @@ function childrenPlay(){
     setTextElementValueById('total-price', totalPrice.toFixed(2))
 
     addProductName('Children play');
+    makePurchaseButtonActive();
 };
 
 function flexibleSofa(){
@@ -105,5 +116,6 @@ function flexibleSofa(){
     setTextElementValueById('total-price', totalPrice.toFixed(2))
 
     addProductName('Flexible Sofa');
+    makePurchaseButtonActive();
 };
 
