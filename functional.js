@@ -22,28 +22,29 @@ function addProductName(name){
 };
 
 
-function discountApply(){
-
-    const totalPrice = getProductValue('total-price');
-    const applyBtn = document.getElementById('apply-btn');
-    const discount = getProductValue('discount');
-    const total = getProductValue('total');
-
+document.getElementById('coupon-code').addEventListener('keyup', function(){
     const couponCode = document.getElementById('coupon-code');
     const couponCodeText = couponCode.value;
-       
-    if(couponCodeText === 'SELL200' && totalPrice >= '200'){    
-        applyBtn.disabled = false;      
-        const getDiscountPrice = totalPrice * 0.2;
-        const updateTotalPrice = totalPrice - getDiscountPrice;
-        setTextElementValueById('total', updateTotalPrice.toFixed(2));
-        setTextElementValueById('discount', getDiscountPrice.toFixed(2));
+    
+    const totalPrice = getProductValue('total-price');
+    
+    const applyBtn = document.getElementById('apply-btn');
+
+    if(couponCodeText === 'SELL200' && totalPrice >= '200'){
+        applyBtn.disabled = false; 
     }
     else{
         applyBtn.disabled = true;
     }
-    
-};
+})
+
+document.getElementById('apply-btn').addEventListener('click', function(){
+        const totalPrice = getProductValue('total-price');
+        const getDiscountPrice = totalPrice * 0.2;
+        const updateTotalPrice = totalPrice - getDiscountPrice;
+        setTextElementValueById('total', updateTotalPrice.toFixed(2));
+        setTextElementValueById('discount', getDiscountPrice.toFixed(2));
+})
 
 function makePurchaseButtonActive(){
     const totalPrice = getProductValue('total-price');

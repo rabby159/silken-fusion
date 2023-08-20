@@ -7,7 +7,7 @@ function accessoriesPart1(){
     const totalPrice = lastTotalPrice + kPart1Price;
     setTextElementValueById('total-price', totalPrice.toFixed(2))
 
-    addProductName('K.Accessories Package 1');
+    addProductName('K.Accessories Pack 1');
     makePurchaseButtonActive();
 };
 
@@ -21,7 +21,7 @@ function accessoriesPart2(){
     setTextElementValueById('total-price', totalPrice.toFixed(2))
 
     
-    addProductName('K.Accessories Package 2');
+    addProductName('K.Accessories Pack 2');
     makePurchaseButtonActive();
 };
 
