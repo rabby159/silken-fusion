@@ -30,7 +30,7 @@
 </head>
 <body>
     <header>
-        <!-- banner section design  -->
+        <!-- banner section design start -->
         <section>
             <div class="font-family">
                 <div class="hero bg-[#F9F6E2] text-center">
@@ -48,18 +48,22 @@
                   </div>
             </div>
         </section>
+        <!-- banner section design end -->
     </header>
     <main>
-        <!-- product card section  -->
         <section>
+            <!-- product card and cart section design start  -->
             <div class="max-w-screen-lg m-auto flex flex-col lg:flex-row gap-5">
-                <!-- card  -->
+
+                <!-- card design start -->
                 <div class="mx-3 md:mx-0">
+
                     <!-- Kitchenware  -->
                     <div>
                         <h1 class="text-[#111] text-4xl font-semibold mt-10 mb-10">Kitchenware</h1>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-                            <!-- product 1  -->
+
+                            <!-- K. Accessories 1  -->
                             <div onclick="accessoriesPart1()" id="product1" class="card bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10 bg-slate-200">
                                 <img src="./images/prod1.png" alt="" class="rounded-xl " />
@@ -76,7 +80,8 @@
                                 <p><span id="kpart-1-price">39.00</span> TK</p>
                                 </div>
                             </div>
-                            <!-- product 2  -->
+
+                            <!-- K. Accessories 2  -->
                             <div onclick="accessoriesPart2()" id="product2" class="card bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10 bg-slate-200">
                                 <img src="./images/prod2.png" alt="" class="rounded-xl " />
@@ -93,7 +98,8 @@
                                 <p><span id="kpart-2-price">25.00</span> TK</p>
                                 </div>
                             </div>
-                            <!-- product 3  -->
+
+                            <!-- Home Cooker  -->
                             <div onclick="homeCooker()" id="product3" class="card bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10 bg-slate-200">
                                 <img src="./images/prod3.png" alt="" class="rounded-xl " />
@@ -107,17 +113,18 @@
                                     <i class="fa-regular fa-star"></i>
                                 </div>
                                 <h2 class="card-title">Home Cooker</h2>
-                                <p><span id="home-cooker-price">49.00</span> TK</p>
+                                <p><span id="home-cooker-price">200.00</span> TK</p>
                                 </div>
                             </div>
                             
                         </div>
                     </div>
+
                     <!-- Sportswear  -->
                     <div>
                         <h1 class="text-[#111] text-4xl font-semibold mt-10 mb-10">Sportsweare</h1>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-                            <!-- product 4  -->
+                            <!-- Sports Back Cap  -->
                             <div onclick="sportsBackCap()" class="card bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10 bg-slate-200">
                                 <img src="./images/prod4.png" alt="" class="rounded-xl " />
@@ -134,7 +141,7 @@
                                 <p><span id="sports-Back-Cap-price">49.00</span> TK</p>
                                 </div>
                             </div>
-                            <!-- product 5  -->
+                            <!-- Full Jersey Sets5  -->
                             <div onclick="fullJerseySets()" class="card bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10 bg-slate-200">
                                 <img src="./images/prod5.png" alt="" class="rounded-xl " />
@@ -151,7 +158,7 @@
                                 <p><span id="full-jersey-sets">69.00</span> TK</p>
                                 </div>
                             </div>
-                            <!-- product 6  -->
+                            <!-- Sports cates  -->
                             <div onclick="sportsCates()" class="card bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10 bg-slate-200">
                                 <img src="./images/prod6.png" alt="" class="rounded-xl " />
@@ -171,11 +178,13 @@
                             
                         </div>
                     </div>
+
                     <!-- Furniture  -->
                     <div>
                         <h1 class="text-[#111] text-4xl font-semibold mt-10 mb-10">Furniture</h1>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-                            <!-- product 7  -->
+
+                            <!-- Single Relax Chair  -->
                             <div onclick="singleRelaxChair()" class="card bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10 bg-slate-200">
                                 <img src="./images/prod7.png" alt="" class="rounded-xl " />
@@ -192,7 +201,8 @@
                                 <p><span id="single-relax-chair">185.00</span> TK</p>
                                 </div>
                             </div>
-                            <!-- product 8  -->
+
+                            <!-- Children play  -->
                             <div onclick="childrenPlay()" class="card bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10 bg-slate-200">
                                 <img src="./images/prod8.png" alt="" class="rounded-xl " />
@@ -209,7 +219,8 @@
                                 <p><span id="children-play">299.00</span> TK</p>
                                 </div>
                             </div>
-                            <!-- product 9  -->
+
+                            <!-- Flexible Sofa  -->
                             <div onclick="flexibleSofa()" class="card bg-base-100 shadow-xl">
                                 <figure class="px-10 pt-10 bg-slate-200">
                                 <img src="./images/prod9.png" alt="" class="rounded-xl " />
@@ -229,9 +240,14 @@
                             
                         </div>
                     </div>
+
                 </div>
-                <!-- order  -->
+                <!-- card design end -->
+
+                <!-- cart design start  -->
                 <div class="lg:mt-28 flex-1 mx-3 md:mx-0 ">
+
+                    <!-- this was for apply button  -->
                     <div class="mb-5 bg-base-100 shadow-xl rounded p-2">
                         <p class="mb-4 text-[#111] font-medium text-2xl">Have coupon?</p>
                         <div class="flex">
@@ -239,6 +255,8 @@
                             <button id="apply-btn" type="submit" class="btn rounded-lg p-3 -ml-16  bg-[#E527B2] text-white focus:outline-none" disabled="disabled">APPLY</button>
                         </div>
                     </div>
+
+                    <!-- this was for make purchase button  -->
                     <div class="bg-[#FFF] rounded-lg bg-base-100 shadow-xl p-2">
                         <div id="product-name" class="text-[#111] font-medium text-xl">
                         
@@ -248,12 +266,16 @@
                         <p class="border-b-2 pb-3 text-[#111] font-medium text-lg">Total: <span id="total">00.00</span> TK</p>
                         <button id="make-purchase" onclick="my_modal_5.showModal()"  class="btn bg-[#E527B2] w-full text-white mt-3 rounded-lg p-3 focus:outline-non" disabled>Make Purchase</button>
                     </div>
+
                 </div>
+                <!-- cart design end  -->
             </div>
-            <!-- modal  -->
+            <!-- product card and cart section design end  -->
+
+
+            <!-- modal start -->
             <div>
                 <!-- Open the modal using ID.showModal() method -->
-                <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
                 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle text-center">
                 <form method="dialog" class="modal-box">
                     <div class="flex justify-center items-center">
@@ -262,14 +284,16 @@
                     <h3 class="font-bold text-5xl">Congratulations</h3>
                     <p class="py-4 text-slate-500 text-xl">You Purchase the product</p>
                     <div class="modal-action flex justify-center items-center">
-                    <!-- if there is a button in form, it will close the modal -->
                     <button id="go-home" class="rounded-lg p-3 bg-[#E527B2] text-white">Go Home</button>
                     </div>
                 </form>
                 </dialog>
             </div>
+            <!-- modal start end -->
         </section>
     </main>
+
+    <!-- js file link  -->
     <script src="./functional.js"></script>
     <script src="./index.js"></script>
 </body>

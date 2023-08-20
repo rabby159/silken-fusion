@@ -1,3 +1,4 @@
+// get product value and replace parseFloat
 function getProductValue(textId){
     const inputText = document.getElementById(textId);
     const inputTextString = inputText.innerText;
@@ -5,11 +6,14 @@ function getProductValue(textId){
     return givenInputText;
 };
 
+// set product name and value
 function setTextElementValueById(elementId, newValue){
     const textElement = document.getElementById(elementId);
     textElement.innerText = newValue;
 };
 
+
+// add product name nad item number in cart
 function addProductName(name){
     const productName = document.getElementById('product-name');
 
@@ -21,6 +25,8 @@ function addProductName(name){
     productName.appendChild(p)
 };
 
+
+// apply coupon condition and set total and discount value
 document.getElementById('apply-btn').addEventListener('click', function(){
         const couponCode = document.getElementById('coupon-code');
         const couponCodeText = couponCode.value;
@@ -36,6 +42,7 @@ document.getElementById('apply-btn').addEventListener('click', function(){
         }
 })
 
+// apply button enable condition 
 function makePurchaseButtonActive(){
     const totalPrice = getProductValue('total-price');
     const makePurchase = document.getElementById('make-purchase');
@@ -55,6 +62,7 @@ function makePurchaseButtonActive(){
     }
 };
 
+// modal go home button with reload website 
 document.getElementById('go-home').addEventListener('click',function(){
     window.location.reload();
 })

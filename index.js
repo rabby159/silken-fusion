@@ -1,3 +1,4 @@
+// calculation total price and called need function 
 function accessoriesPart1(){
 
     const kPart1Price = getProductValue('kpart-1-price');
@@ -11,6 +12,7 @@ function accessoriesPart1(){
     makePurchaseButtonActive();
 };
 
+// calculation total price and called need function 
 function accessoriesPart2(){
 
     const kPart2Price = getProductValue('kpart-2-price');
@@ -25,6 +27,7 @@ function accessoriesPart2(){
     makePurchaseButtonActive();
 };
 
+// calculation total price and called need function 
 function homeCooker(){
 
     const homeCookerPrice = getProductValue('home-cooker-price');
@@ -40,6 +43,7 @@ function homeCooker(){
     makePurchaseButtonActive();
 };
 
+// calculation total price and called need function 
 function sportsBackCap(){
 
     const sportsBackCapPrice = getProductValue('sports-Back-Cap-price');
@@ -54,6 +58,7 @@ function sportsBackCap(){
     makePurchaseButtonActive();
 };
 
+// calculation total price and called need function 
 function fullJerseySets(){
 
     const fullJerseySetsPrice = getProductValue('full-jersey-sets');
@@ -67,6 +72,7 @@ function fullJerseySets(){
     makePurchaseButtonActive();
 };
 
+// calculation total price and called need function 
 function sportsCates(){
 
     const sportsCatesPrice = getProductValue('sports-cates');
@@ -80,6 +86,7 @@ function sportsCates(){
     makePurchaseButtonActive();
 };
 
+// calculation total price and called need function 
 function singleRelaxChair(){
 
     const singleRelaxChairPrice = getProductValue('single-relax-chair');
@@ -93,6 +100,7 @@ function singleRelaxChair(){
     makePurchaseButtonActive();
 };
 
+// calculation total price and called need function 
 function childrenPlay(){
 
     const childrenPlayPrice = getProductValue('children-play');
@@ -106,6 +114,7 @@ function childrenPlay(){
     makePurchaseButtonActive();
 };
 
+// calculation total price and called need function 
 function flexibleSofa(){
 
     const flexibleSofaPrice = getProductValue('flexible-sofa');
