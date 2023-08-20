@@ -6,7 +6,8 @@ function accessoriesPart1(){
     const lastTotalPrice = getProductValue('total-price')
 
     const totalPrice = lastTotalPrice + kPart1Price;
-    setTextElementValueById('total-price', totalPrice.toFixed(2))
+    setTextElementValueById('total-price', totalPrice.toFixed(2));
+    setTextElementValueById('total', totalPrice.toFixed(2));
 
     addProductName('K.Accessories Pack 1');
     makePurchaseButtonActive();
@@ -20,7 +21,8 @@ function accessoriesPart2(){
     const lastTotalPrice = getProductValue('total-price')
 
     const totalPrice = lastTotalPrice + kPart2Price;
-    setTextElementValueById('total-price', totalPrice.toFixed(2))
+    setTextElementValueById('total-price', totalPrice.toFixed(2));
+    setTextElementValueById('total', totalPrice.toFixed(2));
 
     
     addProductName('K.Accessories Pack 2');
@@ -35,7 +37,8 @@ function homeCooker(){
     const lastTotalPrice = getProductValue('total-price')
 
     const totalPrice = lastTotalPrice + homeCookerPrice;
-    setTextElementValueById('total-price', totalPrice.toFixed(2))
+    setTextElementValueById('total-price', totalPrice.toFixed(2));
+    setTextElementValueById('total', totalPrice.toFixed(2));
 
 
     addProductName('Home Cooker');
@@ -51,7 +54,8 @@ function sportsBackCap(){
     const lastTotalPrice = getProductValue('total-price')
 
     const totalPrice = lastTotalPrice + sportsBackCapPrice;
-    setTextElementValueById('total-price', totalPrice.toFixed(2))
+    setTextElementValueById('total-price', totalPrice.toFixed(2));
+    setTextElementValueById('total', totalPrice.toFixed(2));
 
     addProductName('Sports Back Cap');
 
@@ -66,7 +70,8 @@ function fullJerseySets(){
     const lastTotalPrice = getProductValue('total-price')
 
     const totalPrice = lastTotalPrice + fullJerseySetsPrice;
-    setTextElementValueById('total-price', totalPrice.toFixed(2))
+    setTextElementValueById('total-price', totalPrice.toFixed(2));
+    setTextElementValueById('total', totalPrice.toFixed(2));
 
     addProductName('Full Jersey Sets');
     makePurchaseButtonActive();
@@ -80,7 +85,8 @@ function sportsCates(){
     const lastTotalPrice = getProductValue('total-price')
 
     const totalPrice = lastTotalPrice + sportsCatesPrice;
-    setTextElementValueById('total-price', totalPrice.toFixed(2))
+    setTextElementValueById('total-price', totalPrice.toFixed(2));
+    setTextElementValueById('total', totalPrice.toFixed(2));
 
     addProductName('Sports cates');
     makePurchaseButtonActive();
@@ -94,7 +100,8 @@ function singleRelaxChair(){
     const lastTotalPrice = getProductValue('total-price')
 
     const totalPrice = lastTotalPrice + singleRelaxChairPrice;
-    setTextElementValueById('total-price', totalPrice.toFixed(2))
+    setTextElementValueById('total-price', totalPrice.toFixed(2));
+    setTextElementValueById('total', totalPrice.toFixed(2));
 
     addProductName('Single Relax Chair');
     makePurchaseButtonActive();
@@ -108,7 +115,8 @@ function childrenPlay(){
     const lastTotalPrice = getProductValue('total-price')
 
     const totalPrice = lastTotalPrice + childrenPlayPrice;
-    setTextElementValueById('total-price', totalPrice.toFixed(2))
+    setTextElementValueById('total-price', totalPrice.toFixed(2));
+    setTextElementValueById('total', totalPrice.toFixed(2));
 
     addProductName('Children play');
     makePurchaseButtonActive();
@@ -122,7 +130,8 @@ function flexibleSofa(){
     const lastTotalPrice = getProductValue('total-price')
 
     const totalPrice = lastTotalPrice + flexibleSofaPrice;
-    setTextElementValueById('total-price', totalPrice.toFixed(2))
+    setTextElementValueById('total-price', totalPrice.toFixed(2));
+    setTextElementValueById('total', totalPrice.toFixed(2));
 
     addProductName('Flexible Sofa');
     makePurchaseButtonActive();
