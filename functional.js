@@ -21,23 +21,6 @@ function addProductName(name){
     productName.appendChild(p)
 };
 
-
-document.getElementById('coupon-code').addEventListener('keyup', function(){
-    const couponCode = document.getElementById('coupon-code');
-    const couponCodeText = couponCode.value;
-    
-    const totalPrice = getProductValue('total-price');
-    
-    const applyBtn = document.getElementById('apply-btn');
-
-    if(couponCodeText === 'SELL200' && totalPrice >= '200'){
-        applyBtn.disabled = false; 
-    }
-    else{
-        applyBtn.disabled = true;
-    }
-})
-
 document.getElementById('apply-btn').addEventListener('click', function(){
         const totalPrice = getProductValue('total-price');
         const getDiscountPrice = totalPrice * 0.2;
@@ -49,6 +32,7 @@ document.getElementById('apply-btn').addEventListener('click', function(){
 function makePurchaseButtonActive(){
     const totalPrice = getProductValue('total-price');
     const makePurchase = document.getElementById('make-purchase');
+    const applyBtn = document.getElementById('apply-btn');
     
     if(totalPrice > '0'){
         makePurchase.disabled = false;
@@ -56,4 +40,11 @@ function makePurchaseButtonActive(){
     else{
         makePurchase.disabled = true;
     }
+    if(totalPrice >= '200'){
+        applyBtn.disabled = false;
+    }
+    else{
+        applyBtn.disabled = true;
+    }
 };
+
