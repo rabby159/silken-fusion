@@ -22,11 +22,18 @@ function addProductName(name){
 };
 
 document.getElementById('apply-btn').addEventListener('click', function(){
-        const totalPrice = getProductValue('total-price');
-        const getDiscountPrice = totalPrice * 0.2;
-        const updateTotalPrice = totalPrice - getDiscountPrice;
-        setTextElementValueById('total', updateTotalPrice.toFixed(2));
-        setTextElementValueById('discount', getDiscountPrice.toFixed(2));
+        const couponCode = document.getElementById('coupon-code');
+        const couponCodeText = couponCode.value;
+        if(couponCodeText === 'SELL200'){
+            const totalPrice = getProductValue('total-price');
+            const getDiscountPrice = totalPrice * 0.2;
+            const updateTotalPrice = totalPrice - getDiscountPrice;
+            setTextElementValueById('total', updateTotalPrice.toFixed(2));
+            setTextElementValueById('discount', getDiscountPrice.toFixed(2));
+        }
+        else{
+            alert('Please provide valid coupon code');
+        }
 })
 
 function makePurchaseButtonActive(){
@@ -47,4 +54,8 @@ function makePurchaseButtonActive(){
         applyBtn.disabled = true;
     }
 };
+
+document.getElementById('go-home').addEventListener('click',function(){
+    window.location.reload();
+})
 

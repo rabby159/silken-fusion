@@ -246,9 +246,27 @@
                         <p class="border-t-2 pt-3 text-[#111] font-medium text-lg">Total price: <span id="total-price">00.00</span> TK</p>
                         <p class="text-[#111] font-medium text-lg">Discount: <span id="discount" >00.00</span> TK</p>
                         <p class="border-b-2 pb-3 text-[#111] font-medium text-lg">Total: <span id="total">00.00</span> TK</p>
-                        <button id="make-purchase"  class="btn bg-[#E527B2] w-full text-white mt-3 rounded-lg p-3 focus:outline-non" disabled>Make Purchase</button>
+                        <button id="make-purchase" onclick="my_modal_5.showModal()"  class="btn bg-[#E527B2] w-full text-white mt-3 rounded-lg p-3 focus:outline-non" disabled>Make Purchase</button>
                     </div>
                 </div>
+            </div>
+            <!-- modal  -->
+            <div>
+                <!-- Open the modal using ID.showModal() method -->
+                <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
+                <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle text-center">
+                <form method="dialog" class="modal-box">
+                    <div class="flex justify-center items-center">
+                        <img src="./images/congo.png" alt="">
+                    </div>
+                    <h3 class="font-bold text-5xl">Congratulations</h3>
+                    <p class="py-4 text-slate-500 text-xl">You Purchase the product</p>
+                    <div class="modal-action flex justify-center items-center">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button id="go-home" class="rounded-lg p-3 bg-[#E527B2] text-white">Go Home</button>
+                    </div>
+                </form>
+                </dialog>
             </div>
         </section>
     </main>
