@@ -24,13 +24,13 @@ function addProductName(name){
 
 function discountApply(){
 
-    const couponCode = document.getElementById('coupon-code');
-    const couponCodeText = couponCode.value;
-
-    const applyBtn = document.getElementById('apply-btn');
     const totalPrice = getProductValue('total-price');
+    const applyBtn = document.getElementById('apply-btn');
     const discount = getProductValue('discount');
     const total = getProductValue('total');
+
+    const couponCode = document.getElementById('coupon-code');
+    const couponCodeText = couponCode.value;
        
     if(couponCodeText === 'SELL200' && totalPrice >= '200'){    
         applyBtn.disabled = false;      
@@ -55,5 +55,4 @@ function makePurchaseButtonActive(){
     else{
         makePurchase.disabled = true;
     }
-}
-
+};
